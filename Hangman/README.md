@@ -1,8 +1,8 @@
-#Hangman Game
+# Hangman Game
 
 A Hangman game built using C# and connected to a database for word selection. This is an interactive console-based experience where players attempt to guess a randomly chosen word, one letter at a time.
 
-##Features
+## Features
 
 - Database Integration: Fetches a random word from a SQL Server database to ensure variety in gameplay.
 - Word Masking: Displays a masked version of the word with underscores representing unguessed letters.
