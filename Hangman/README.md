@@ -14,3 +14,4 @@ A Hangman game built using C# and connected to a database for word selection. Th
 
 - Retrieving Random Word: Created a database storing words and then using a query  "SELECT TOP 1 Word FROM Words ORDER BY NEWID()" to randomly sort the words and fetch the top result. 
 - Case Sensitivity: To ensure user input match the word regardless of upper or lowercase letters, I converted both the word from the database and user's input to lowercase before the comparison.
+- Managing Game Over and Win Condition: To ensure the game ends correctly when either all attempts are used or the word is guessed, I used "isWordGuessed = !maskedWord.Contains('_');" to check if maskedWord still contains an underscore. If it does and attempts == 0, a game over message will be displayed. If no underscore is present, the user wins.
