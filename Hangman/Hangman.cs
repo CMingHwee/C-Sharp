@@ -20,7 +20,7 @@ class HangmanGame
             Console.WriteLine($"\nWord: {maskedWord}");
             Console.WriteLine($"Attempts left: {attemptsLeft}");
             Console.Write("Enter a letter: ");
-            char guess = Console.ReadKey().KeyChar;
+            char guess = char.ToLower(Console.ReadKey().KeyChar);
             Console.WriteLine();//read key press and assign it to guess and then output a blank line for readibility 
 
             if (wordToGuess.Contains(guess))
